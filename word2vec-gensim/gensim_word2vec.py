@@ -4,7 +4,7 @@ from gensim.models.word2vec import LineSentence
 
 data_path = 'train_data.txt'
 model_path = 'gensim_word2vec.model'
-embedding_path = 'train_data_embedding_gensim.txt'
+embedding_path = 'train_data_embedding.txt'
 
 # train
 model = Word2Vec(LineSentence(data_path), size=300, window=2, min_count=0, workers=1, sg=0, hs=0, negative=20, sample=1e-4, iter=5)
